@@ -1,0 +1,20 @@
+<html>
+<head>
+    <script type="text/javascript" src="libs/vue.js"></script><script type="text/javascript" src="libs/axios.js"></script>
+</head>
+<body>
+<a href="index.html">Home</a>
+<div id="add">
+    Nume: <input type="text" v-model="sup.nume">
+    Pret: <input type="text" v-model="sup.pret">
+    Aroma: <input type="text" v-model="sup.aroma">
+    Descriere: <input type="text" v-model="sup.descriere">
+    Cantitate: <input type="text" v-model="sup.cantitate">
+    Producator: <input type="text" v-model="sup.producator">
+    Utilizare Recomandata: <input type="text" v-model="sup.utilizare_recomandata">
+    <button v-on:click="add(sup)">Save</button>
+    <p>{{message}}</p>
+</div>
+<script src="src/add.js"></script>
+</body>
+</html>
